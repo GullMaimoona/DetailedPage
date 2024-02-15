@@ -1,48 +1,47 @@
 'use client'
 import React, { useState } from 'react';
 
-// Sample products data
 const products = [
   {
     id: 1,
     name: 'Trim Dress',
     price: '$145',
-    imageUrl: '/images/trim-dress.jpg', // Replace with your actual image path
+    imageUrl: '/images/trim-dress.jpg',  
     rating: 5,
   },
   {
     id: 2,
     name: 'Belted Top',
     price: '$98',
-    imageUrl: '/images/belted-top.jpg', // Replace with your actual image path
+    imageUrl: '/images/belted-top.jpg',  
     rating: 4,
   },
   {
     id: 3,
     name: 'Waist Dress',
     price: '$230',
-    imageUrl: '/images/waist-dress.jpg', // Replace with your actual image path
+    imageUrl: '/images/waist-dress.jpg',  
     rating: 5,
   },
   {
     id: 4,
     name: 'Summer Dress',
     price: '$120',
-    imageUrl: '/images/summer-dress.jpg', // Replace with your actual image path
+    imageUrl: '/images/summer-dress.jpg',  
     rating: 4,
   },
   {
     id: 5,
     name: 'Casual Shirt',
     price: '$70',
-    imageUrl: '/images/casual-shirt.jpg', // Replace with your actual image path
+    imageUrl: '/images/casual-shirt.jpg',  
     rating: 3,
   },
   {
     id: 6,
     name: 'T-Shirts',
     price: '$25',
-    imageUrl: '/images/t-shirts.jpg', // Replace with your actual image path
+    imageUrl: '/images/t-shirts.jpg',  
     rating: 5,
   },
 ];
@@ -65,7 +64,6 @@ const ProductCard = ({ product }) => {
   );
 };
 
-// Home component with a smaller heading size
 export default function Home() {
   const itemsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(0);

@@ -1,20 +1,11 @@
-// pages/product.js
-
 export default function ProductPage() {
     return (
       <div className="container mx-auto p-4">
-        <div className="flex flex-wrap -mx-4">
-  
-          {/* Left Column for Menu and Offers */}
-          <div className="md:w-1/4 px-4 mb-4 md:mb-0">
-            {/* Brand Menu */}
-            {/* ... Brand menu component here ... */}
-  
-            {/* Offers */}
-            {/* ... Offers component here ... */}
+        <div className="flex flex-wrap -mx-4">     
+          <div className="md:w-1/4 px-4 mb-4 md:mb-0">    
           </div>
   
-          {/* Right Column for Product Details */}
+           
           <div className="md:w-3/4 px-4 flex flex-wrap">
             
             {/* Product Image */}
@@ -28,7 +19,6 @@ export default function ProductPage() {
               <div className="text-lg line-through text-gray-500">$315</div>
               <div className="text-2xl text-red-500 mb-2">$94.5 <span className="text-base font-normal text-gray-500">70% Off</span></div>
   
-              {/* ... Rest of product info ... */}
               {/* Color Options */}
           <div className="flex space-x-2 mb-4">
             <div className="w-6 h-6 bg-yellow-300 rounded-full border-2 border-yellow-300"></div>
@@ -40,7 +30,7 @@ export default function ProductPage() {
             <div className="border border-gray-300 rounded px-2 py-1 mr-4">S</div>
             <div className="border border-gray-300 rounded px-2 py-1">M</div>
           </div>
-            {/* Stock and Quantity Selection */}
+            {/* Quantity Selection */}
             <div className="mb-4">
             <div className="mb-1">InStock</div>
             <div className="flex items-center border border-gray-300 rounded">
@@ -49,12 +39,12 @@ export default function ProductPage() {
               <button className="px-4 py-2 bg-gray-100">{'>'}</button>
             </div>
           </div>
-          {/* Action Buttons */}
+          {/* Buttons */}
           <div className="flex space-x-4 mb-8">
             <button className="bg-red-500 text-white font-bold px-8 py-2 rounded">ADD TO CART</button>
             <button className="bg-black text-white font-bold px-8 py-2 rounded">BUY NOW</button>
           </div>
-            {/* Product Description */}
+            {/* Description */}
             <div className="border-t pt-4">
             <div className="font-bold text-xl mb-2">Product Details</div>
             <p>

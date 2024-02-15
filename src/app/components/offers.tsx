@@ -1,4 +1,3 @@
-// components/Features.js
 import React from 'react';
 import { FiTruck, FiClock, FiGift, FiCreditCard } from 'react-icons/fi';
  

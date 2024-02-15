@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Sample related products data
 const relatedProducts = [
   {
     id: 1,

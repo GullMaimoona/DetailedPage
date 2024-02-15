@@ -1,5 +1,4 @@
-// pages/index.js
-'use client';
+ 'use client';
 import React, { useState, useEffect } from 'react';
 
 const CountdownTimer = ({ targetDate }) => {
@@ -25,8 +24,7 @@ const CountdownTimer = ({ targetDate }) => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
-
-    // Clear timeout if the component is unmounted
+ 
     return () => clearTimeout(timer);
   });
 
@@ -39,8 +37,7 @@ const CountdownTimer = ({ targetDate }) => {
         <span className="text-sm gap-7">{interval}</span>
       </div>
     );
-
-    // Add colon except after the last element
+ 
     if (index < array.length - 1) {
       timerComponents.push(
         <span className="text-sm bg mx-1 " key={index}>:</span>
@@ -56,7 +53,7 @@ const CountdownTimer = ({ targetDate }) => {
 };
 
 export default function Home() {
-  // Set the target date to 9 days from the current date
+  // target time. I want to adjust. 
   const currentDate = new Date();
   const targetDate = new Date(currentDate.getTime() + 9 * 24 * 60 * 60 * 1000).toISOString();
 
